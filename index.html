@@ -5,30 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>JW Realty | Property Bot Assistant</title>
   <style>
+    /* Fonts & base */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      background-color: #f8fafc; /* very light blue/white */
+      color: #0b2240; /* dark blue */
     }
+
+    /* Header styling */
     header {
-      background-color: #00274d;
+      background-color: #004a99; /* JW Realty blue */
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
+      box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
     }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 8px 0 0;
+      font-weight: 500;
+      font-size: 1.1rem;
+      opacity: 0.85;
+    }
+
+    /* Main content */
     main {
-      padding: 40px 20px;
+      max-width: 680px;
+      margin: 60px auto 40px;
+      padding: 0 20px;
       text-align: center;
     }
-    h1 {
-      margin-bottom: 10px;
+    main h2 {
+      color: #004a99;
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
     }
-    p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 0 auto;
+    main p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #2c3e5a;
+      margin-bottom: 16px;
+    }
+
+    /* Responsive for small screens */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      main h2 {
+        font-size: 1.4rem;
+      }
     }
   </style>
 </head>
@@ -43,7 +77,7 @@
     <p>
       Our smart chatbot assistant is ready to help you find your dream home, book a property viewing, or answer your questions 24/7.
     </p>
-    <p>Scroll or click the chat bubble to begin.</p>
+    <p>Click or tap the chat bubble at the bottom right to start chatting.</p>
   </main>
 
   <!-- Tidio chatbot widget -->
